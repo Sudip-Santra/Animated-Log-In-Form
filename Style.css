@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body{
+    background: white;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #222222;
+    max-height: 455px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 7px 7px 10px 3px #24004628;
+}
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 14px;
+    padding: 24px;
+}
+#chk{
+    display: none;
+}
+.login{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#emailid{
+    position: absolute;
+    left: 1.8rem;
+    top: 40.6%;
+    color: rgb(75, 75, 75);
+    font-size: 1.1rem;
+}
+#pswd{
+    position: absolute;
+    left: 1.8rem;
+    top: 54%;
+    color: rgb(75, 75, 75);
+    font-size: 1.1rem;
+}
+.login img{
+    position: absolute;
+    right: 1.8rem;
+    top: 54%;
+    filter: invert(75%);
+    width: 21px;
+    cursor: pointer;
+}
+.register img{
+    position: absolute;
+    right: 1.8rem;
+    top: 62.7%;
+    filter: invert(75%);
+    width: 21px;
+    cursor: pointer;
+}
+#LoginShowPassword.hide{
+    background: url('hide-solid-24.png');
+    background-size: cover;
+}
+#RegisterShowPassword.hide{
+    background: url('hide-solid-24.png');
+    background-size: cover;
+}
+#username{
+    position: absolute;
+    left: 1.8rem;
+    top: 35%;
+    color: rgb(75, 75, 75);
+    font-size: 1.1rem;
+}
+#email{
+    position: absolute;
+    left: 1.8rem;
+    top: 49%;
+    color: rgb(75, 75, 75);
+    font-size: 1.1rem;
+}
+#setPassword{
+    position: absolute;
+    left: 1.8rem;
+    top: 62.7%;
+    color: rgb(75, 75, 75);
+    font-size: 1.1rem;
+}
+.login label{
+    margin: 15% 0 10%;
+}
+label{
+    color: white;
+    font-size: 2rem;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.input{
+    width: 100%;
+    height: 40px;
+    background: rgb(234, 234, 234);
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+.input::placeholder{
+    padding-left: 17px;
+}
+#fp{
+    font-size: 0.7rem;
+    color: white;
+    margin-top: -0.3rem;
+}
+#fp a{
+    color: white;
+    font-weight: bold;
+}
+#fp a:hover{
+    color: #0084ff;
+}
+#dhaa{
+    font-size: 0.7rem;
+    color: white;
+    margin-top: -26px;
+}
+#dhaa label:hover{
+    color: #0084ff;
+}
+#login{
+    margin-top: -0.08rem;
+}
+#rgstr{
+    font-size: 0.7rem;
+    float: right;
+    margin-top: auto;
+}
+.register{
+    background: white;
+    border-radius: 70% / 10%;
+    transform: translateY(5%);
+    transition: 0.8s ease-in-out;
+    margin-top: -40px;
+}
+.register label{
+    color: black;
+    transform: scale(0.6);
+    font-weight: bold;
+}
+#chk:checked ~ .register{
+    transform: translateY(-57%);
+}
+#chk:checked ~ .register label{
+    transform: scale(1);
+    margin: 10% 0 5%;
+}
+#chk:checked ~ .login #loginlabel{
+    transform: scale(0.6);
+    margin: 5% 0 5%;
+}
+.form button{
+    width: 50%;
+    height: 40px;
+    margin: 12px auto 10%;
+    color: black;
+    background: yellow;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+.form button:hover{
+    background-color: #0084ff;
+    color: white;
+}
+

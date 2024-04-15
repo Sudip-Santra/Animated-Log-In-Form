@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <input type="checkbox" id="chk" aria-hidden="true">
+            <div class="login">
+                <form class="form">
+                    <label for="chk" aria-hidden="true" id="loginlabel">Log in</label>
+                    <input class="input" id="inputField1" type="email" autocomplete="off" name="email" placeholder="Email ID" required="" onkeydown="toggleIcon('inputField1','emailid',event)">
+                    <i class='bx bxs-user' id="emailid"></i>
+                    <input class="input" id="inputField2" type="password" name="pswd" placeholder="Password" required="" onkeydown="toggleIcon('inputField2','pswd',event)">
+                    <i class='bx bxs-lock-alt' id="pswd"></i>
+                    <img src="show-solid-24.png" alt="" id="LoginShowPassword" onclick="LoginShowHide()"/>
+                    <p id="fp">Forgot Password ? <a href="">Click Here</a></p>
+                    <button id="login">Log in</button>
+                    <p id="dhaa">Don't have an account ?<label for="chk" aria-hidden="true" id="rgstr">&nbsp;<u>Register</u></label></p>
+                </form>
+            </div>
+            <div class="register">
+                <form class="form">
+                    <label for="chk" aria-hidden="true">Register</label>
+                    <input class="input" id="inputField3" type="text" class="input" name="txt" placeholder="Username" autocomplete="off" required="" onkeydown="toggleIcon('inputField3','username',event)">
+                    <i class='bx bxs-user' id="username"></i>
+                    <input class="input" id="inputField4" type="email" autocomplete="off" name="email" placeholder="Enter Your Email...." required="" onkeydown="toggleIcon('inputField4','email',event)">
+                    <i class='bx bxs-envelope' id="email"></i>
+                    <input class="input" id="inputField5" type="password" name="pswd" placeholder="Set Password...." required="" onkeydown="toggleIcon('inputField5','setPassword',event)">
+                    <i class='bx bxs-key' id="setPassword"></i>
+                    <img src="show-solid-24.png" alt="" id="RegisterShowPassword" onclick="RegisterShowHide()"/>
+                    <button>Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
